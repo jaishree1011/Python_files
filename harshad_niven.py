@@ -1,0 +1,12 @@
+inp=int(input())
+org=inp
+sum=0
+while(inp>0):
+  last=inp%10
+  temp=sum*10+last
+  inp=inp//10
+  sum+=last
+if(org%sum==0):
+  print("Yes")
+else:
+  print("No")
